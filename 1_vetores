@@ -2,7 +2,7 @@
 #include <string.h>
 #define NUM_ALUNOS 5
 #define TAM_NOME 100
- 
+  
 typedef struct {
     char nome[TAM_NOME];
 } Aluno;
