@@ -8,7 +8,7 @@ struct Aluno {
     float notaTotal;
     float media;
 };
-
+ 
 int main() {
     struct Aluno alunos[NUM_ALUNOS];
 
