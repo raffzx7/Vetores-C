@@ -2,7 +2,6 @@
 #define NUM_ALUNOS 5
 #define NUM_NOTAS 4
 
-
 struct Aluno {
     char nome[50];
     float notas[NUM_NOTAS];
