@@ -9,7 +9,7 @@ struct Aluno {
     float media;
     char resultado[20];
 };
-
+ 
 void calcularMedia(struct Aluno *aluno) {
     float soma = 0;
     for (int i = 0; i < NUM_NOTAS; i++) {
