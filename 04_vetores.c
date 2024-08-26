@@ -8,7 +8,6 @@ struct Aluno {
     float media;
     char resultado[20];
 };
-
 void calcularMedia(struct Aluno *aluno) {
     float soma = 0;
     for (int i = 0; i < NUM_NOTAS; i++) {
@@ -16,7 +15,6 @@ void calcularMedia(struct Aluno *aluno) {
     }
     aluno->media = soma / NUM_NOTAS;
 }
-
 void determinarResultado(struct Aluno *aluno) {
     if (aluno->media < 4)
         strcpy(aluno->resultado, "Reprovado");
@@ -25,7 +23,6 @@ void determinarResultado(struct Aluno *aluno) {
     else
         strcpy(aluno->resultado, "Aprovado");
 }
-
 int main() {
     struct Aluno alunos[NUM_ALUNOS];
 
@@ -33,11 +30,9 @@ int main() {
         calcularMedia(&alunos[i]);
         determinarResultado(&alunos[i]);
     }
-
     printf("resultados:\n");
     for (int i = 0; i < NUM_ALUNOS; i++) {
         printf("Aluno: %s - Média: %.2f - Resultado: %s\n", alunos[i].nome, alunos[i].media, alunos[i].resultado);
     }
-
     return 0;
 }
