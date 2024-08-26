@@ -15,7 +15,6 @@ float obterNotaValida() {
     }
     return nota;
 }
-
 int main() {
     float notas[NUM_ALUNOS][NUM_NOTAS];
     
@@ -27,7 +26,6 @@ int main() {
         }
         printf("\n");
     }
-
     for (int i = 0; i < NUM_ALUNOS; i++) {
         printf("notas %d: ", i + 1);
         for (int j = 0; j < NUM_NOTAS; j++) {
@@ -35,6 +33,5 @@ int main() {
         }
         printf("\n");
     }
-
     return 0;
 }
